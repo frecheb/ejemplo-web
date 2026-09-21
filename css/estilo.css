@@ -1,0 +1,51 @@
+
+header{
+	background: darkslategray;							/* Fondo gris pizarra oscuro */
+	color: white;										/* Texto blanco */
+	padding: 20px 30px;									/* Espacio interno: 20 arriba/abajo 30 lados */
+	display: flex;										/* Flexbox para colocar hijos en fila*/
+	justify-content: space-between;						/* Título a la izquierda, menú a la derecha */
+	align-items: center;								/* Centrado vertical de los hijos */
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);			/* Sombra suave debajo del header */
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background: whitesmoke;
+	
+}
+
+footer{
+	background: darkslategray;
+	color: white;
+	padding: 5px 30px;	
+	text-align: center;
+	
+}
+
+table{
+width: 100%;
+border-collapse: collapse;
+margin-top: 1rem;
+
+}
+
+th, td{
+	border: 1px solid #d1f1ea;
+	padding: 0.5rem;
+	text-align: center;
+
+}
+
+fieldset{
+	border: 1px solid darkslategray;
+	padding: 1rem;
+	margin-bottom: 1rem;
+
+}
+
+.PROG{background-color: #f8d7da;} /* Programación -> fondo rojo claro */
+.SIST{background-color: #d1ecf1;}
+.BBDD{background-color: #d4edda;}
+.IPE{background-color: #fff3cd;}
+.INGL{background-color: #e6d7f0;} // color morado claro

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<HTML lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name viewport>
+		<title>Formulario</title>
+		<link rel="stylesheet" href="css/estilo.css">
+	</head>
+	
+	<header>
+		<h1>Formulario</h1>
+		<nav>
+			<a href="index.html">Inicio</a>
+			<a href="horario.html">Horario</a>
+			<a href="formulario.html">Formulario</a>
+		</nav>
+	</header>
+
+	<main>
+		<h2>Formulario de contacto</h2>
+		<form>
+			<fieldset>
+				<legend>Datos de contacto</legend>
+				<!-- NOMBRE -->
+				<p>
+					<label for="nombre">Nombre*:</label>
+					<input type="text" id="nombre" name="nombre" required/>
+				</p>
+
+				<!-- APELLIDOS -->
+				<p>
+					<label for="apellidos">Apellidos*:</label>
+					<input type="text" id="apellidos" name="apellidos" required/>
+				</p>
+
+				<!-- CONTRASEÑA -->
+				<p>
+					<label for="contraseña">Contraseña*:</label>
+					<input type="text" id="contraseña" name="contraseña" required/>
+				</p>
+
+				<!-- EMAIL -->
+				<p>
+					<label for="correo">Correo electrónico:</label>
+					<input type="email" id="email" name="email"/>
+				</p>
+
+				<!-- TELÉFONO -->
+				<p>
+					<label for="telefono">Teléfono:</label>
+					<input type="tel" id="telefono" name="telefono"/>
+				</p>
+
+				<!-- WEB -->
+				<p>
+					<label for="web">Página web:</label>
+					<input type="url" id="web" name="web"/>
+				</p>
+
+				<!-- BUSCAR -->
+				<p>
+					<label for="buscar">Buscar:</label>
+					<input type="search" id="buscar" name="buscar"/>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>Fechas y horas</legend>
+				<!-- FECHA -->
+				<p>
+					<label for="fecha">Fecha:</label>
+					<input type="date" id="fecha" name="fecha"/>
+				</p>
+
+				<!-- HORA -->
+				<p>
+					<label for="hora">Hora:</label>
+					<input type="time" id="hora" name="hora"/>
+				</p>
+
+				<!-- DATETIME-LOCAL -->
+				<p>
+					<label for="fechahora">Fecha y hora:</label>
+					<input type="datetime-local" id="fechahora" name="fechahora"/>
+				</p>
+
+				<!-- MES -->
+				<p>
+					<label for="mes">Mes:</label>
+					<input type="month" id="mes" name="mes"/>
+				</p>
+
+				<!-- SEMANA -->
+				<p>
+					<label for="semana">Semana:</label>
+					<input type="week" id="semana" name="semana"/>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>Valores numéricos</legend>
+
+				<!-- NÚMERO -->
+				<p>
+					<label for="edad">Edad:</label>
+					<input type="number" id="edad" name="edad" min="0" max="120" step="1"/>
+				</p>
+
+				<!-- RANGO -->
+				<p>
+					<label for="valor">Nivel:</label>
+					<input type="range" id="valor" name="valor" min="0" max="100"/>
+				</p>
+
+				<!-- COLOR -->
+				<p>
+					<label for="color">Color favorito:</label>
+					<input type="color" id="color" name="color"/>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>Opciones</legend>
+
+				<!-- RADIO -->
+				 <p>Selecciona una opción:</p>
+				 <input type="radio" id="opcion1" name="opcion" value="1" />
+          		<label for="opcion1">Opción 1</label>
+
+         		 <br/>
+
+          		<input type="radio" id="opcion2" name="opcion" value="2" />
+          		<label for="opcion2">Opción 2</label>
+
+          		<br/>
+
+          		<input type="radio" id="opcion3" name="opcion" value="3" />
+         		 <label for="opcion3">Opción 3</label>
+			</fieldset>
+
+			<button type="submit">Enviar</button>
+		</form>
+	</main>
+	
+        <footer>
+			<p>&copy; CIFP "Virgen de Gracia"</p>
+			<p>Contacto:
+				<a href="mailto:juan.informatica@cifpvirgedegracia.com">
+					juan.informatica@cifpvirgedegracia.com
+				</a>
+			</p>
+		</footer>
+
+    </body>
+</HTML>
