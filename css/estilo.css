@@ -44,8 +44,85 @@ fieldset{
 
 }
 
-.PROG{background-color: #f8d7da;} /* Programación -> fondo rojo claro */
-.SIST{background-color: #d1ecf1;}
-.BBDD{background-color: #d4edda;}
-.IPE{background-color: #fff3cd;}
-.INGL{background-color: #e6d7f0;} // color morado claro
+footer a {
+  color: #ffff00;             /* Cambia el color del texto a amarillo */
+  text-decoration: none;      /* Quita el subrayado predeterminado */
+
+}
+
+/* Transformar los enlaces en botones con forma de píldora */
+nav a {
+  display: inline-block;
+  background-color: slategrey; /* Color de fondo de las píldoras */
+  color: #ffffff;             /* Color del texto */
+  text-decoration: none;      /* Quita el subrayado */
+  padding: 8px 20px;          /* Espaciado interno: arriba/abajo y lados */
+  margin: 0 5px;              /* Separación entre un botón y otro */
+  border-radius: 20px;        /* Redondea las esquinas completamente */
+  font-weight: bold;          /* Texto en negrita */
+  font-family: sans-serif;    /* Tipo de letra limpio */
+}
+
+/* Efecto al pasar el ratón por encima (opcional pero muy recomendado) */
+nav a:hover {
+  background-color: #3b475d; /* Se aclara ligeramente el botón */
+}
+
+thead td,
+thead th {
+  color: #fff;
+  background: #003333;
+  font-weight: bold;
+}
+
+.HORA{
+	background-color: #e0ecec;
+	color: #003333;
+}
+
+.PROG{
+	background-color: #FFCCCC;
+	color: #990000;
+}
+
+.SIST{
+	background-color: #FFE5CC;
+	color: #994C00;
+}
+
+.BBDD{
+	background-color: #FFFFCC;
+	color: #999900;
+}
+
+.IPE{
+	background-color: #CCE5FF;
+	color: #004C99;
+}
+
+.INGL{
+	background-color: #CCFFFF;
+	color: #009999;}
+
+.LLMM{
+	background-color: #CCCCFF;
+	color: #000099;}
+
+.SOST{
+	background-color: #99CCFF;
+	color: #004C99;
+}
+
+.PROY{
+	background-color: #FFCCE5;
+	color: #99004C;}
+
+.DIGI{
+	background-color: #E5FFCC;
+	color: #009900;
+}
+
+.ENTO{
+	background-color: #CCFFCC;
+	color: #009900;
+}

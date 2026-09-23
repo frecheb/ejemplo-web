@@ -123,8 +123,8 @@
 				<legend>Opciones</legend>
 
 				<!-- RADIO -->
-				 <p>Selecciona una opción:</p>
-				 <input type="radio" id="opcion1" name="opcion" value="1" />
+				<p>Selecciona una opción:</p>
+				<input type="radio" id="opcion1" name="opcion" value="1" />
           		<label for="opcion1">Opción 1</label>
 
          		 <br/>
@@ -135,10 +135,132 @@
           		<br/>
 
           		<input type="radio" id="opcion3" name="opcion" value="3" />
-         		 <label for="opcion3">Opción 3</label>
-			</fieldset>
+         		<label for="opcion3">Opción 3</label>
 
-			<button type="submit">Enviar</button>
+				 <!-- CHECKBOX -->
+          		<p>Selecciona tus aficiones:</p>
+
+          		<input type="checkbox" id="deporte" name="aficiones" value="deporte" />
+          		<label for="deporte">Deporte</label>
+
+          		<br/>
+
+          		<input type="checkbox" id="musica" name="aficiones" value="musica" />
+          		<label for="musica">Música</label>
+				
+          		<br/>
+
+          		<input type="checkbox" id="informatica" name="aficiones" value="informatica" />
+          		<label for="informatica">Informática</label>
+        	</fieldset>
+
+        	<fieldset>
+        		<legend>Listas</legend>
+
+				<!-- SELECT -->
+        		<p>
+            	<label for="provincia">Provincia:</label>
+
+            	<select id="provincia" name="provincia">
+            		<option value="">Selecciona una provincia</option>
+
+            		<option value="cordoba">Córdoba</option>
+            		<option value="ciudad_real">Ciudad Real</option>
+            		<option value="toledo">Toledo</option>
+            		<option value="jaen">Jaén</option>
+            	</select>
+          		</p>
+
+          		<!-- SELECT CON GRUPOS -->
+          		<p>
+            	<label for="estudios">Estudios:</label>
+
+            	<select id="estudios" name="estudios">
+            		<optgroup label="Informática">
+            			<option value="dam">DAM</option>
+            			<option value="daw">DAW</option>
+            			<option value="asir">ASIR</option>
+            		</optgroup>
+
+              		<optgroup label="Electrónica">
+                		<option value="teleco">Sistemas de Telecomunicaciones</option>
+                		<option value="electronica">Electrónica</option>
+              		</optgroup>
+            	</select>
+          		</p>
+
+          		<!-- SELECT MULTIPLE -->
+          		<p>
+            	<label for="lenguajes"> Lenguajes favoritos: </label>
+
+            	<select id="lenguajes" name="lenguajes" multiple size="4">
+              	<option value="html">HTML</option>
+             	<option value="css">CSS</option>
+              	<option value="javascript">JavaScript</option>
+              	<option value="java">Java</option>
+            	</select>
+          		</p>
+        	</fieldset>
+
+			<fieldset>
+          		<legend>Texto</legend>
+
+          		<!-- TEXTAREA -->
+          		<p>
+            	<label for="comentarios"> Comentarios: </label>
+
+            	<br />
+
+            	<textarea
+              		id="comentarios"
+              		name="comentarios"
+              		rows="5"
+              		cols="40"
+              		placeholder="Escribe aquí tus comentarios"
+            	>
+            	</textarea>
+          		</p>
+        	</fieldset>
+
+			<fieldset>
+          		<legend>Otros elementos</legend>
+
+          		<!-- FILE -->
+          		<p>
+            	<label for="archivo"> Selecciona un archivo: </label>
+
+            	<input type="file" id="archivo" name="archivo" />
+          		</p>
+
+          		<!-- DATALIST -->
+          		<p>
+            	<label for="navegador"> Navegador favorito: </label>
+
+            	<input list="navegadores" id="navegador" name="navegador" />
+
+            	<datalist id="navegadores">
+              		<option value="Chrome"></option>
+              		<option value="Firefox"></option>
+              		<option value="Edge"></option>
+              		<option value="Brave"></option>
+            	</datalist>
+          		</p>
+
+          		<!-- HIDDEN -->
+          		<input type="hidden" name="id_usuario" value="123" />
+        	</fieldset>
+
+			<fieldset >
+		  		<legend>Botones</legend>
+
+				<p>
+				<!-- SUBMIT -->
+				<input type="submit" value="Enviar formulario" />
+
+				<!-- RESET -->
+				<input type="reset" value="Restablecer formulario" />
+				</p>
+			</fieldset>
 		</form>
 	</main>
 	
