@@ -35,7 +35,7 @@ footer{
 }
 
 main.pagina-horario {
-    min-height: calc(100vh - 255px); /* Ajusta los píxeles según lo alto que sea tu header y footer */
+    min-height: calc(100vh - 254px); /* Ajusta los píxeles según lo alto que sea tu header y footer */
 }
 
 table {
