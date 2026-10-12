@@ -1,5 +1,5 @@
 function cargarHeader() {
-  fetch("../componentes/header.html")
+  fetch("componentes/header.html")
     .then(response => response.text())
     .then(data => {
       document.querySelector("header").innerHTML = data;
@@ -7,7 +7,7 @@ function cargarHeader() {
 }
 
 function cargarFooter() {
-  fetch("../componentes/footer.html")
+  fetch("componentes/footer.html")
     .then(response => response.text())
     .then(data => {
       document.querySelector("footer").innerHTML = data;
