@@ -1,3 +1,10 @@
+body {
+	font-family: Arial, sans-serif;
+	background: whitesmoke;
+	margin: 0;
+    padding: 0;
+}
+
 
 header{
 	background: darkslategray;							/* Fondo gris pizarra oscuro */
@@ -9,45 +16,53 @@ header{
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);			/* Sombra suave debajo del header */
 }
 
-body {
-	font-family: Arial, sans-serif;
-	background: whitesmoke;
-	
-}
-
 footer{
 	background: darkslategray;
 	color: white;
 	padding: 5px 30px;	
 	text-align: center;
-	
 }
 
-table{
-width: 100%;
-border-collapse: collapse;
-margin-top: 1rem;
-
+.div-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #ffffff; /* Fondo blanco limpio para resaltar la tabla */
+    border: 1px solid #d1d9d9; /* Un borde sutil acorde a los tonos de la cabecera */
+    border-radius: 12px; /* Esquinas redondeadas y elegantes */
+    padding: 32px; /* Espacio interior equilibrado */
+    box-shadow: 10px 15px 35px rgba(0, 0, 0, 0.08), 
+                5px 5px 15px rgba(0, 0, 0, 0.04);
 }
+
+main.pagina-horario {
+    min-height: calc(100vh - 255px); /* Ajusta los píxeles según lo alto que sea tu header y footer */
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; /* Cambiamos de collapse a separate */
+    border-spacing: 0;        /* Elimina el espacio entre celdas para que sigan pegadas */
+    border-radius: 10px;      /* Redondea toda la tabla de golpe */
+    overflow: hidden;         /* Recorta los fondos de las esquinas perfectamente */
+    margin-top: 1rem;
+}
+
 
 th, td{
 	border: 1px solid #d1f1ea;
 	padding: 0.5rem;
 	text-align: center;
-
 }
 
 fieldset{
 	border: 1px solid darkslategray;
 	padding: 1rem;
 	margin-bottom: 1rem;
-
 }
 
 footer a {
   color: #ffff00;             /* Cambia el color del texto a amarillo */
   text-decoration: none;      /* Quita el subrayado predeterminado */
-
 }
 
 /* Transformar los enlaces en botones con forma de píldora */
@@ -73,11 +88,13 @@ thead th {
   color: #fff;
   background: #003333;
   font-weight: bold;
+  padding: 15px;
 }
 
 .HORA{
 	background-color: #e0ecec;
 	color: #003333;
+	padding: 15px;
 }
 
 .PROG{
