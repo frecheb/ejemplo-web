@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/calculadora.js"></script>
+    <script src="js/funciones.js"></script>
+</head>
+
+<body class="body-calculadora">
+    <header></header>
+    <script>
+			cargarHeader();
+	</script>
+    <h1>Calculadora</h1>
+    <br>
+
+    <div class="calculadora">
+    <table>
+        <thead>
+            <tr><th colspan="4"><input type="text" id="pantalla" value="0" readonly></th></tr>
+            <tr>
+                <th><button>DEL</button></th>
+                <th><button onclick="aCero()">AC</button></th>
+                <th><button>%</button></th>
+                <th><button onclick="escribir('/')">/</button></th>
+            </tr>
+            <tr>
+                <th><button onclick="escribir('7')">7</button></th>
+                <th><button onclick="escribir('8')">8</button></th>
+                <th><button onclick="escribir('9')">9</button></th>
+                <th><button onclick="escribir('*')">X</button></th>
+            </tr>
+            <tr>
+                <th><button onclick="escribir('4')">4</button></th>
+                <th><button onclick="escribir('5')">5</button></th>
+                <th><button onclick="escribir('6')">6</button></th>
+                <th><button onclick="escribir('-')">-</button></th>
+            </tr>
+            <tr>
+                <th><button onclick="escribir('1')">1</button></th>
+                <th><button onclick="escribir('2')">2</button></th>
+                <th><button onclick="escribir('3')">3</button></th>
+                <th><button onclick="escribir('+')">+</button></th>
+            </tr>
+            <tr>
+                <th><button>+/-</button></th>
+                <th><button>0</button></th>
+                <th><button>,</button></th>
+                <th><button onclick="calcular()">=</button></th>
+            </tr>
+    </thead>
+    </table>
+    </div>
+    <footer></footer>
+	<script>
+		cargarFooter();
+	</script>
+</body>
+</html>

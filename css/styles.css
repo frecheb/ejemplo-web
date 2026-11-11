@@ -1,0 +1,214 @@
+.body-calculadora h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #f2a33c;
+    margin-bottom: 20px;
+}
+
+/* Fondo gris claro para toda la página */
+.body-calculadora {
+  background-color: #e5e5e7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+}
+
+/* Caja contenedora de la calculadora (Gris oscuro macOS) */
+.calculadora {
+  background-color: #292320;
+  padding: 20px 12px 16px 12px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Ajustes de la tabla dentro del contenedor */
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  table-layout: fixed;
+  width: 230px;
+}
+
+th, td {
+  padding: 4px;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+}
+
+/* Pantalla estilizada estilo macOS */
+#pantalla {
+  width: 100%;
+  background-color: #808080;                  /* Color gris */
+  border: 1px solid rgba(255, 255, 255, 0.25); /* Borde sutil para definir los cantos */
+  border-radius: 12px;                        /* Curvatura limpia */
+  outline: none;
+  text-align: right;
+  font-size: 2.6rem;
+  font-weight: 500;                           /* Hace destacar los números blancos */
+  color: #ffffff;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  margin-bottom: 14px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3); /* Efecto de bisel/profundidad */
+}
+
+/* Hacer los botones circulares */
+button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%; /* Hace el botón redondo */
+  border: none;       /* Quita el borde rectangular por defecto */
+  outline: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  
+  /* Centrar el texto dentro del círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* ==========================================
+   ESTILOS JUEGO: PIEDRA, PAPEL O TIJERA
+   ========================================== */
+
+/* Fondo general idéntico al de la calculadora */
+.body-juego {
+  background-color: #e5e5e7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+}
+
+/* Tarjeta principal oscura estilo macOS */
+.contenedor-juego {
+  background-color: #292320;
+  color: #ffffff;
+  padding: 28px 24px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+.contenedor-juego h1 {
+  font-size: 28px;
+  color: #f2a33c; /* Naranja macOS */
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.subtitulo-juego {
+  color: #d1d1d6;
+  font-size: 0.95rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de los 3 botones de jugada */
+.opciones {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+/* Sobrescribe el botón circular de la calculadora para alojar emoji + texto */
+.opciones .btn-jugada {
+  width: auto;
+  height: auto;
+  flex: 1;
+  padding: 12px 10px;
+  border-radius: 12px; /* Esquinas redondeadas suaves en vez de círculo 50% */
+  background-color: #5c5957;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.opciones .btn-jugada:hover {
+  background-color: #f2a33c; /* Se ilumina en naranja al pasar el ratón */
+  color: #1c1c1e;
+}
+
+.opciones .btn-jugada:active {
+  transform: scale(0.96);
+}
+
+/* Cuadrícula 2x2 para organizar las estadísticas del marcador */
+.panel-marcador {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.panel-marcador p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #e5e5ea;
+}
+
+/* Sección de resultado imitando la #pantalla gris de la calculadora */
+.pantalla-resultado {
+  width: 100%;
+  background-color: #808080;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3); /* Mismo bisel interior */
+  text-align: left;
+}
+
+.pantalla-resultado h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 6px;
+}
+
+.pantalla-resultado p {
+  margin: 6px 0;
+  font-size: 0.92rem;
+  color: #f2f2f7;
+}
+
+/* Destaca el mensaje de Ganaste / Perdiste / Empate */
+.pantalla-resultado .mensaje-final {
+  margin-top: 12px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ffca7a; /* Naranja claro para resaltar sobre el fondo gris #808080 */
+  min-height: 1.5rem;
+}

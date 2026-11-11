@@ -1,100 +1,231 @@
+html {
+    height: 100%;
+}
+
 body {
-	font-family: Arial, sans-serif;
-	background: whitesmoke;
-	margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #e5e5e7;
+    color: #292320;
+    margin: 0;
     padding: 0;
+
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
 }
 
-
-header{
-	background: darkslategray;							/* Fondo gris pizarra oscuro */
-	color: white;										/* Texto blanco */
-	padding: 20px 30px;									/* Espacio interno: 20 arriba/abajo 30 lados */
-	display: flex;										/* Flexbox para colocar hijos en fila*/
-	justify-content: space-between;						/* Título a la izquierda, menú a la derecha */
-	align-items: center;								/* Centrado vertical de los hijos */
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);			/* Sombra suave debajo del header */
+.apple-icon {
+    width: var(--header-icon-size, 32px);
+    height: var(--header-icon-size, 32px);
+    object-fit: contain;
 }
 
-footer{
-	background: darkslategray;
-	color: white;
-	padding: 5px 30px;	
-	text-align: center;
+header {
+    background: #292320;
+    color: white;
+    padding: var(--header-padding, 20px) 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+
+	border-bottom: 1px solid #f2a33c;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: var(--header-title-size, 2rem);
+    margin: 0;
+}
+
+header nav a {
+    padding: var(--header-nav-padding, 8px 20px);
+}
+
+footer {
+    background: #292320;
+    color: white;
+    padding: 5px 30px;
+    text-align: center;
+	border-top: 1px solid #f2a33c;
+	margin-top: auto;
 }
 
 .div-container {
+	width: 100%;
+    box-sizing: border-box;
     max-width: 1200px;
     margin: 40px auto;
-    background-color: #ffffff; /* Fondo blanco limpio para resaltar la tabla */
-    border: 1px solid #d1d9d9; /* Un borde sutil acorde a los tonos de la cabecera */
-    border-radius: 12px; /* Esquinas redondeadas y elegantes */
-    padding: 32px; /* Espacio interior equilibrado */
-    box-shadow: 10px 15px 35px rgba(0, 0, 0, 0.08), 
+    background-color: #ffffff;
+    border: 1px solid #d1d1d6;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 10px 15px 35px rgba(0, 0, 0, 0.08),
                 5px 5px 15px rgba(0, 0, 0, 0.04);
 }
 
 main.pagina-horario {
-    min-height: calc(100vh - 254px); /* Ajusta los píxeles según lo alto que sea tu header y footer */
+    min-height: calc(100vh - 254px);
+	min-width: 0;
 }
 
 table {
     width: 100%;
-    border-collapse: separate; /* Cambiamos de collapse a separate */
-    border-spacing: 0;        /* Elimina el espacio entre celdas para que sigan pegadas */
-    border-radius: 10px;      /* Redondea toda la tabla de golpe */
-    overflow: hidden;         /* Recorta los fondos de las esquinas perfectamente */
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
     margin-top: 1rem;
 }
 
-
-th, td{
-	border: 1px solid #d1f1ea;
-	padding: 0.5rem;
-	text-align: center;
+th, td {
+    border: 1px solid #d1d1d6;
+    padding: 0.5rem;
+    text-align: center;
 }
 
-fieldset{
-	border: 1px solid darkslategray;
-	padding: 1rem;
-	margin-bottom: 1rem;
+fieldset {
+    border: 1px solid #808080;
+	border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+input,
+select,
+textarea,
+button {
+    border-radius: 8px;
+	border-width: 1px;
+	border-color: #808080;
+}
+
+/* Deslizador personalizado */
+input[type="range"] {
+    accent-color: #f2a33c;
+}
+
+input[type="color"]:hover {
+    border-color: #f2a33c;
+}
+
+input[type="color"]:focus {
+    border-color: #f2a33c;
+    outline: 1px solid #f2a33c;
+}
+
+input[type="file"] {
+    border: none;
+    border-radius: 0;
+}
+
+input[type="file"]::file-selector-button {
+    border-radius: 8px;
+    border: 1px solid #808080;
+    padding: 4px 10px;
+	transition: background-color 0.2s ease,
+                color 0.2s ease,
+                border-color 0.2s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #FFC36B;
+    color: #292320;
+    border-color: #FFC36B;
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:active {
+    background-color: #f2a33c;
+    color: #292320;
+    border-color: #f2a33c;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    transition: background-color 0.2s ease,
+                color 0.2s ease,
+                border-color 0.2s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #FFC36B;
+    color: #292320;
+    border-color: #FFC36B;
+    cursor: pointer;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active {
+    background-color: #f2a33c;
+    color: #292320;
+    border-color: #f2a33c;
 }
 
 footer a {
-  color: #ffff00;             /* Cambia el color del texto a amarillo */
-  text-decoration: none;      /* Quita el subrayado predeterminado */
+    color: #f2a33c;
+    text-decoration: none;
 }
 
 /* Transformar los enlaces en botones con forma de píldora */
 nav a {
-  display: inline-block;
-  background-color: slategrey; /* Color de fondo de las píldoras */
-  color: #ffffff;             /* Color del texto */
-  text-decoration: none;      /* Quita el subrayado */
-  padding: 8px 20px;          /* Espaciado interno: arriba/abajo y lados */
-  margin: 0 5px;              /* Separación entre un botón y otro */
-  border-radius: 20px;        /* Redondea las esquinas completamente */
-  font-weight: bold;          /* Texto en negrita */
-  font-family: sans-serif;    /* Tipo de letra limpio */
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    white-space: normal;
+    line-height: normal;
+    min-height: 20px;
+    vertical-align: middle;
+    background-color: #808080;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 20px;
+    margin: 0 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Efecto al pasar el ratón por encima (opcional pero muy recomendado) */
+nav a[href="piedra-papel-tijera.html"] {
+    font-size: 0.61em;
+}
+
+/* Al pasar el ratón */
 nav a:hover {
-  background-color: #3b475d; /* Se aclara ligeramente el botón */
+    background-color: #FFC36B;
+    color: #292320;
+}
+
+/* Mientras se pulsa */
+nav a:active {
+    background-color: #f2a33c;
+    color: #292320;
 }
 
 thead td,
 thead th {
-  color: #fff;
-  background: #003333;
-  font-weight: bold;
-  padding: 15px;
+    color: #fff;
+    background: #292320;
+    font-weight: bold;
+    padding: 15px;
 }
 
-.HORA{
-	background-color: #e0ecec;
-	color: #003333;
-	padding: 15px;
+.HORA {
+    background-color: #f0f0f2;
+    color: #292320;
+    padding: 15px;
 }
 
 .PROG{

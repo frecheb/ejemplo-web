@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/juego.js" defer></script>
+    <script src="js/funciones.js"></script>
+</head>
+
+<body class="body-juego">
+    <header></header>
+    <script>
+			cargarHeader();
+	</script>
+    <main class="contenedor-juego">
+        <h1>Piedra, Papel o Tijera</h1>
+        <p class="subtitulo-juego">Elige una opción y juega contra la máquina:</p>
+
+        <div class="opciones">
+            <button class="btn-jugada" onclick="jugar('piedra')">✊🏻 Piedra</button>
+            <button class="btn-jugada" onclick="jugar('papel')">✋🏻 Papel</button>
+            <button class="btn-jugada" onclick="jugar('tijera')">✌🏻 Tijera</button>
+        </div>
+
+        <div class="panel-marcador">
+            <p id="marcador">Partidas jugadas: 0</p>
+            <p id="ganadas">Partidas ganadas: 0</p>
+            <p id="empatadas">Partidas empatadas: 0</p>
+            <p id="perdidas">Partidas perdidas: 0</p>
+        </div>
+
+        <section id="resultado" class="pantalla-resultado">
+            <h2>Resultado</h2>
+            <p id="jugada-jugador">Tu jugada aparecerá aquí: </p>
+            <p id="jugada-maquina">La jugada de la máquina aparecerá aquí: </p>
+            <p id="mensaje" class="mensaje-final"></p>
+        </section>
+    </main>
+    <footer></footer>
+	<script>
+		cargarFooter();
+	</script>
+</body>
+</html>
