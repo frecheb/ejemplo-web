@@ -1,0 +1,101 @@
+
+/* Título de la calculadora */
+.body-calculadora > h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #f2a33c;
+    margin-bottom: 20px;
+}
+
+/* Caja contenedora de la calculadora */
+.calculadora {
+    background-color: #292320;
+    border: none;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px 12px 16px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Tabla de la calculadora */
+.calculadora table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    table-layout: fixed;
+    width: 230px;
+}
+
+.calculadora th,
+.calculadora td {
+    padding: 4px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    border: none;
+}
+
+/* Pantalla */
+.calculadora #pantalla {
+    width: 100%;
+    height: 66px;
+    min-height: 66px;
+    background-color: #808080;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    outline: none;
+    text-align: right;
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: #ffffff;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    margin-bottom: 14px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Botones */
+.calculadora button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #666666;
+    color: #ffffff;
+}
+
+/* Botones de funciones: DEL, AC y % */
+.calculadora tr:nth-child(2) th:nth-child(-n+3) button {
+    background-color: #a5a5a5;
+}
+
+/* Botones de operaciones */
+.calculadora tr:nth-child(2) th:nth-child(4) button,
+.calculadora tr:nth-child(n+3) th:nth-child(4) button {
+    background-color: #fe9405;
+}
+
+/* Efecto hover: botones numéricos */
+.calculadora button:hover {
+    filter: brightness(1.2);
+}
+
+/* Efecto active: pulsación */
+.calculadora button:active {
+    filter: brightness(0.85);
+    transform: scale(0.94);
+}
+
+/* Transición suave */
+.calculadora button {
+    transition: filter 0.2s ease, transform 0.1s ease;
+}
