@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<HTML lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name viewport>
+		<title>Ejercicio 3</title>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+
+    <body>
+        <div class="divGeneral">
+            <p class="titulos">Tabla prueba 1</p>
+            <div class = "div1">
+                <table class="table1">
+                    <thead>
+                        <tr>
+                            <th class="th1">columna 1</th>
+                            <th class="th1">columna 2</th>
+                            <th class="th1">columna 3</th>
+                            <th class="th1">columna 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td1">col 1</td>
+                            <td class="td1" colspan="2">col 2</td>
+                            <td class="td1" rowspan="2">col 3</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">colum 1</td>
+                            <td class="td1">colum 2</td>
+                            <td class="td1">colum 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="divGeneral">
+            <p class="titulos">Tabla prueba 2</p>
+                <table class="table2">
+                    <thead>
+                        <tr>
+                            <th class="th2">columna 1</th>
+                            <th class="th2">columna 2</th>
+                            <th class="th2">columna 3</th>
+                            <th class="th2">columna 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td-green">col1</td>
+                            <td class="td-green" colspan="2">col2</td>
+                            <!-- Espacio por colspan anterior -->
+                            <td class="td-green">col3</td>
+                        </tr>
+                        <tr>
+                            <td class="td-grey">colum1</td>
+                            <td class="td-grey" rowspan="2">colum2</td>
+                            <td class="td-grey">colum3</td>
+                            <td class="td-grey">colum4</td>
+                        </tr>
+                        <tr>
+                            <td class="td-green">column1</td>
+                            <!-- Espacio por rowspan anterior -->
+                            <td class="td-green">column3</td>
+                            <td class="td-green">colum4</td>
+                        </tr>
+                        <tr>
+                            <td class="td-grey">colu1</td>
+                            <td class="td-grey">colu2</td>
+                            <td class="td-grey">colu3</td>
+                            <td class="td-grey">colu4</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </body>
+</HTML>

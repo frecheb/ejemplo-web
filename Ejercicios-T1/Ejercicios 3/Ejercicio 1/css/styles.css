@@ -1,0 +1,71 @@
+body {
+
+}
+
+.div-general {
+  max-width: 1300px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titulos {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  background-color: #99ffff;
+  background-image: url('../resources/game-boy.png');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  padding: 10px;
+}
+
+.parrafos {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.parrafo-morado {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 21.5px;
+  color: #ffffff;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 45px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.texto-enmarcado {
+  border: 3px solid #6b52d1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 0, 0.1); 
+  padding: 1px 4px; 
+}
+
+#texto-verde {
+  background-color: #dafcc4;
+}
+
+#texto-naranja {
+  background-color: #f4d77d;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#texto-morado {
+  background-color: #5f2deb;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}

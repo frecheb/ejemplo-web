@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="../../">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ejercicio 1 - Actividad 2</title>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- JavaScript principal -->
+    <script src="js/funciones.js"></script>
+</head>
+
+<body>
+
+    <!-- Cabecera común -->
+    <header id="header"></header>
+    <script>
+        cargarHeader();
+    </script>
+
+
+    <main>
+        <div class="div-container">
+
+            <h1>Ejercicio 1 - Actividad 2</h1>
+
+            <iframe
+                id="ejercicio"
+                src="/Ejercicios-T1/Ejercicios%201/Ejercicio%202/index.html"
+                title="Ejercicio 1 - Actividad 2"
+                width="100%"
+                style="display: block; border: none;"
+            ></iframe>
+
+            <script>
+                const iframe = document.getElementById("ejercicio");
+
+                iframe.addEventListener("load", () => {
+                    iframe.style.height =
+                        iframe.contentDocument.documentElement.scrollHeight + "px";
+                });
+            </script>
+
+        </div>
+    </main>
+
+
+    <!-- Footer común -->
+    <footer id="footer"></footer>
+
+    <script>
+        cargarFooter();
+    </script>
+
+</body>
+</html>
