@@ -18,7 +18,7 @@
 	</script>
     <main class="contenedor-juego">
         <h1>Piedra, Papel o Tijera</h1>
-        <p class="subtitulo-juego">Elige una opción y juega contra la máquina:</p>
+        <p class="subtitulo-juego">Elige una opción y juega contra la máquina</p>
 
         <div class="opciones">
             <button class="btn-jugada" onclick="jugar('piedra')">✊🏻 Piedra</button>
@@ -35,8 +35,19 @@
 
         <section id="resultado" class="pantalla-resultado">
             <h2>Resultado</h2>
-            <p id="jugada-jugador">Tu jugada aparecerá aquí: </p>
-            <p id="jugada-maquina">La jugada de la máquina aparecerá aquí: </p>
+
+            <div class="jugadas-resultado">
+                <div class="jugada">
+                    <h3>Tu jugada</h3>
+                    <span id="jugada-jugador" class="emoji-jugada">❔</span>
+                </div>
+
+                <div class="jugada">
+                    <h3>Jugada de la máquina</h3>
+                    <span id="jugada-maquina" class="emoji-jugada">❔</span>
+                </div>
+            </div>
+
             <p id="mensaje" class="mensaje-final"></p>
         </section>
     </main>

@@ -6,6 +6,11 @@ let perdidas = 0;
 function jugar (jugador) {
     const opciones = ["piedra", "papel", "tijera"];
     const maquina = opciones[Math.floor(Math.random() * opciones.length)];
+    const emojis = {
+    piedra: "✊🏻",
+    papel: "✋🏻",
+    tijera: "✌🏻"
+    };
     let mensaje;
 
     partidas++;
@@ -25,8 +30,8 @@ function jugar (jugador) {
         perdidas++;
     }
 
-document.getElementById("jugada-jugador").textContent = `Tu elección: ${jugador}`;
-document.getElementById("jugada-maquina").textContent = `Elección de la máquina: ${maquina}`;
+document.getElementById("jugada-jugador").textContent = emojis[jugador];
+document.getElementById("jugada-maquina").textContent = emojis[maquina];
 document.getElementById("mensaje").textContent = mensaje;
 document.getElementById("marcador").textContent = `Partidas jugadas: ${partidas}`;
 document.getElementById("ganadas").textContent = `Ganadas: ${ganadas}`;
